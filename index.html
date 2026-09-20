@@ -3,58 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TOR3 Labs — independent software and game development studio.">
+  <meta name="description" content="TOR3 Labs — software, games and experimental digital products.">
+  <meta name="theme-color" content="#101722">
   <title>TOR3 Labs</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%23111827%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2232%22%20r%3D%2223%22%20fill%3D%22none%22%20stroke%3D%22%232f64c7%22%20stroke-width%3D%2212%22%2F%3E%3Ccircle%20cx%3D%2234%22%20cy%3D%2261%22%20r%3D%2223%22%20fill%3D%22none%22%20stroke%3D%22%2365b7d2%22%20stroke-width%3D%2212%22%2F%3E%3Ccircle%20cx%3D%2266%22%20cy%3D%2261%22%20r%3D%2223%22%20fill%3D%22none%22%20stroke%3D%22%237750ad%22%20stroke-width%3D%2212%22%2F%3E%3C%2Fsvg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="shell">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="TOR3 Labs home">
+      <span class="brand-dot"></span><span>TOR3 Labs</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav-cta" href="mailto:tor3labs@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
     <section class="hero">
-      <div class="brandmark" aria-label="TOR3 Labs emblem">
-        <svg viewBox="0 0 320 250" role="img" aria-labelledby="logoTitle">
-          <title id="logoTitle">Three interlocked rings — TOR3 Labs</title>
-          <g fill="none" stroke-width="34">
-            <ellipse class="ring ring-blue" cx="160" cy="92" rx="72" ry="88"/>
-            <ellipse class="ring ring-cyan" cx="112" cy="152" rx="72" ry="88" transform="rotate(-58 112 152)"/>
-            <ellipse class="ring ring-violet" cx="208" cy="152" rx="72" ry="88" transform="rotate(58 208 152)"/>
-          </g>
-        </svg>
+      <div class="hero-copy">
+        <div class="eyebrow">Independent software studio · Yerevan, Armenia</div>
+        <h1>Ideas engineered into <span>useful digital products.</span></h1>
+        <p class="lead">TOR3 Labs develops software, Android applications, games and experimental projects with a focus on thoughtful design and reliable implementation.</p>
+        <div class="actions">
+          <a class="button primary" href="mailto:tor3labs@gmail.com">Get in touch</a>
+          <a class="button ghost" href="#projects">View projects</a>
+        </div>
+        <div class="chips" aria-label="TOR3 Labs areas">
+          <span>Android</span><span>Software</span><span>Games</span><span>Experiments</span>
+        </div>
       </div>
-
-      <h1><span>TOR</span><span class="three">3</span> Labs</h1>
-      <p class="tagline">Software &amp; game development studio</p>
-      <p class="intro">
-        TOR3 Labs creates software, games and experimental digital products.
-        We focus on useful ideas, thoughtful design and reliable implementation.
-      </p>
-
-      <div class="actions">
-        <a class="button" href="mailto:tor3labs@gmail.com">Contact us</a>
-        <a class="button secondary" href="privacy.html">Privacy</a>
+      <div class="logo-panel">
+        <img src="data:image/webp;base64,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" alt="TOR3 Labs logo: three interlocked blue, cyan and violet rings">
       </div>
     </section>
 
-    <section class="cards" aria-label="About TOR3 Labs">
-      <article>
-        <h2>What we build</h2>
-        <p>Android applications, games, utilities and experimental software projects.</p>
-      </article>
-      <article>
-        <h2>Our apps</h2>
-        <p>Our first public releases are in development. Links will appear here as they become available.</p>
-      </article>
-      <article>
-        <h2>Contact</h2>
-        <p><a href="mailto:tor3labs@gmail.com">tor3labs@gmail.com</a></p>
-      </article>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="kicker">About</p>
+        <h2>A small studio with room to grow.</h2>
+      </div>
+      <div class="cards">
+        <article><h3>Software</h3><p>Practical applications and utilities built around clear real-world needs.</p></article>
+        <article><h3>Games</h3><p>Interactive projects where systems, mechanics and presentation matter equally.</p></article>
+        <article><h3>Experiments</h3><p>New ideas, prototypes and technical explorations that can grow into products.</p></article>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="kicker">Projects</p>
+        <h2>First public releases are in development.</h2>
+        <p>App links, support information and product-specific privacy policies will appear here as releases become available.</p>
+      </div>
+      <div class="project-placeholder">
+        <div class="project-icon">3</div>
+        <div><strong>Coming soon</strong><span>TOR3 Labs public release</span></div>
+      </div>
+    </section>
+
+    <section class="contact-card">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>Have a question?</h2>
+        <p>For developer, product and support enquiries:</p>
+      </div>
+      <a href="mailto:tor3labs@gmail.com">tor3labs@gmail.com</a>
     </section>
   </main>
 
   <footer>
-    <div>© 2026 TOR3 Labs</div>
-    <div class="legal">
-      TOR3 Labs is a developer brand of TOROPITSIN SERGEY VIKTORI, IE · Yerevan, Armenia
-    </div>
+    <div><strong>TOR3 Labs</strong><br>Software &amp; game development studio</div>
+    <div class="legal">TOR3 Labs is a developer brand of TOROPITSIN SERGEY VIKTORI, IE<br>Yerevan, Armenia</div>
+    <div><a href="privacy.html">Privacy Policy</a><br>© 2026 TOR3 Labs</div>
   </footer>
 </body>
 </html>
